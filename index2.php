@@ -17,6 +17,17 @@
 
             </p>
 
+            <div class="header" style="margin-left: 100px;">
+                <nav>
+                <ul style="margin-right: 120px ">
+              
+                <li><a href="index.php"> ingresar como Donador </a></li>
+                <li><a href="ingresabene.php"> ingresar como Beneficiario </a></li>
+                
+                </div>
+                </ul>
+                </nav>
+               </div> 
 
 
         </p>

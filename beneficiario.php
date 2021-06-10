@@ -2,7 +2,7 @@
 
 	session_start();
 	if (@!$_SESSION['user']) {
-		header("Location:index.php");
+		header("Location:index.html");
 	}if ($_SESSION['rol']==1) {
 		header("Location:admin.php");
 	}if($_SESSION['rol'] == 4){

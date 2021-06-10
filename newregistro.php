@@ -7,12 +7,12 @@ $conectar = new PDO('mysql:host=localhost;dbname=academ', 'root', '');
 	$valor=2;
 	$num= NULL;
 
-	$orden = "INSERT INTO login (user, password , email, pasadmin, rol, passben) VALUES ('$nombre', '$contrasena', '$correo', '$num', '$valor', '$num' )";
+	$orden = "INSERT INTO login (user, password , email, pasadmin, rol, passben) VALUES ('$nombre', '$contrasena', '$correo', '$num', '$valor', '$num')";
 	
 	$resultado = $conectar->query($orden);
 
 	if ($resultado) {
-		header("Location: index.php");
+		header("Location: admin.php");
 		echo '<script>
 				alert("Registro Exitoso");
 				</script>';
@@ -20,6 +20,6 @@ $conectar = new PDO('mysql:host=localhost;dbname=academ', 'root', '');
 
 		echo "Error al Registrar";
 	}
-	require 'registradonador.html';
+	require 'nuevo.php';
 
 ?>

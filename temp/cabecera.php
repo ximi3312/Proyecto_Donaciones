@@ -27,7 +27,7 @@
 			<ul class="navbar-nav mr-auto">
 			
 				<li class="nav-item active">
-					<a class="nav-link" href="beneficiario.php" >Perfil</a>
+					<a class="nav-link" href="perfilbene.php" >Perfil</a>
 				</li>
 				<li class="nav-item active">
 					<a class="nav-link" href="desconectar.php"  > Cerrar Cesión </a></li>

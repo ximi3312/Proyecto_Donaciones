@@ -17,11 +17,11 @@
 <body >
 		<div class="log">
 			<form action="validar2.php" method="post">
-				<h5>Ingresa</h5>
+				<h5>Ingresa Beneficiario</h5>
 				<p2>Usuario </p2>
-				<input type="text" name="mail">
+				<input type="text" name="email">
 				<p2>Contraseña: </p2>
-				<input type="password" name="passben">
+				<input type="password" name="contrasena">
 				<input class="btn btn-primary" type="submit" value="Aceptar">
 			
 			</form>

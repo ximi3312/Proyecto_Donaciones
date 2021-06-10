@@ -27,32 +27,29 @@ if (@!$_SESSION['user']) {
              <tr>
                  <td>ID</td>
                  <td>Nombres</td>
-                 <td>Correo</td>
-                 <td>Direccion</td>
-                 <td>Numero</td>
-                 <td>Descripcion</td>
                  <td>Contraseña</td>
+                 <td>Correo</td>
+                 <td>Contraseña administrador</td>
                  <td>Roles</td>
                  <td colspan="2">Operaciones</td>
              </tr>
              <?php
              $conectar= new mysqli('localhost','root', '', 'academ');
  
-             $orden="SELECT * FROM beneficiario";
+             $orden="SELECT * FROM login";
              $resultado= $conectar->query($orden);
              while($row=$resultado->fetch_assoc()){
              ?>
                  <tr>
-                 <td><?php echo $row['id'];?></td>
+                     <td><?php echo $row['id'];?></td>
                      <td><?php echo $row['user'];?></td>
+                     <td><?php echo $row['password'];?></td>
                      <td><?php echo $row['email'];?></td>
-                     <td><?php echo $row['direccion'];?></td>
-                     <td><?php echo $row['numero'];?></td>
-                     <td><?php echo $row['descripcion'];?></td>
-                     <td><?php echo $row['contrasena'];?></td>
+                     <td><?php echo $row['pasadmin'];?></td>
                      <td><?php echo $row['rol'];?></td>
-                     <td><a href="eliminar2.php?id=<?php echo $row['id']; ?>"><button type ='button' >Eliminar</button></a></td>;
-                     <td><a href="actualizar2.php?id=<?php echo $row['id']; ?>"><button type ='button' >Editar</button></a></td>;
+                     <td><a href="eliminar.php?id=<?php echo $row['id']; ?>"><button type ='button' >Eliminar</button></a></td>;
+                     <td><a href="actualizar.php?id=<?php echo $row['id']; ?>"><button type ='button' >Editar</button></a></td>;
+                     
                  </tr>
  
              <?php 

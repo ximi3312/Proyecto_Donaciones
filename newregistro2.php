@@ -1,13 +1,16 @@
 <?php 
 
 $conectar = new PDO('mysql:host=localhost;dbname=academ', 'root', '');
-	$nombre = $_POST['nombre'];
-	$correo = $_POST['correo'];
-	$contrasena = $_POST['contrasena'];
-	$valor=3;
-	$num= NULL;
+$nombre = $_POST['nombre'];
+$correo = $_POST['correo'];
+$contrasena = $_POST['contrasena'];
+$numero = $_POST['numero'];
+$descripcion = $_POST['descripcion'];
+$direccion = $_POST['direccion'];
+$valor = 3;
 
-	$orden = "INSERT INTO login (user, password , email, pasadmin, rol, passben) VALUES ('$nombre','$num' , '$correo', '$num', '$valor',  '$contrasena')";
+	
+	$orden = "INSERT INTO beneficiario (user , email, direccion, numero, descripcion, contrasena, rol) VALUES ('$nombre', '$correo', '$direccion', '$numero','$descripcion', '$contrasena', '$valor' )"; 
 	
 	$resultado = $conectar->query($orden);
 

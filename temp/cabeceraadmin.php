@@ -27,13 +27,14 @@
 			<ul class="navbar-nav mr-auto">
 
 			<li class="nav-item active">
-					<a class="nav-link" href="admin.php">Inicio</a></li>
+					<a class="nav-link" href="admin.php">Tabla Beneficiario</a></li>
+			<li class="nav-item active">
+					<a class="nav-link" href="tabladonadores.php">Tabla Donadores</a></li>
 			<li class="nav-item active">
 					<a class="nav-link" href="nuevo.php">Nuevo Donador</a></li>
 			<li class="nav-item active">
 					<a class="nav-link" href="nuevobene.php">Nuevo Beneficiario</a></li>
-				
-				<li class="nav-item active">
+			<li class="nav-item active">
 					<a class="nav-link" href="desconectar.php"> Cerrar Cesión </a></li>
 				
 			</ul>

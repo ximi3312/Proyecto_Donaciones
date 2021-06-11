@@ -7,7 +7,7 @@ $conectar = new PDO('mysql:host=localhost;dbname=academ', 'root', '');
 	$valor=2;
 	$num= NULL;
 
-	$orden = "INSERT INTO login (user, password , email, pasadmin, rol, passben) VALUES ('$nombre', '$contrasena', '$correo', '$num', '$valor', '$num' )";
+	$orden = "INSERT INTO login (user, password , email, pasadmin, rol) VALUES ('$nombre', '$contrasena', '$correo', '$num', '$valor' )";
 	
 	$resultado = $conectar->query($orden);
 

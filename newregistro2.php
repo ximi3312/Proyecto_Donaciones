@@ -1,13 +1,17 @@
 <?php 
 
 $conectar = new PDO('mysql:host=localhost;dbname=academ', 'root', '');
-	$nombre = $_POST['nombre'];
-	$correo = $_POST['correo'];
-	$contrasena = $_POST['contrasena'];
-	$valor=3;
-	$num= NULL;
+$nombre = $_POST['nombre'];
+$correo = $_POST['correo'];
+$contrasena = $_POST['contrasena'];
+$numero = $_POST['numero'];
+$descripcion = $_POST['descripcion'];
+$direccion = $_POST['direccion'];
+$rol = $_POST['rol'];
 
-	$orden = "INSERT INTO login (user, password , email, pasadmin, rol, passben) VALUES ('$nombre','$num' , '$correo', '$num', '$valor',  '$contrasena')";
+
+	
+	$orden = "INSERT INTO beneficiario (user , email, direccion, numero, descripcion, contrasena, rol) VALUES ('$nombre', '$correo', '$direccion', '$numero','$descripcion', '$contrasena', '$rol' )"; 
 	
 	$resultado = $conectar->query($orden);
 
@@ -20,6 +24,6 @@ $conectar = new PDO('mysql:host=localhost;dbname=academ', 'root', '');
 
 		echo "Error al Registrar";
 	}
-	require 'nuevo.php';
+	require 'admin.php';
 
 ?>

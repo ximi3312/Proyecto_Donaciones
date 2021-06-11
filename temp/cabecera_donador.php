@@ -25,10 +25,6 @@
 		</button>
 		<div id="my-nav" class="collapse navbar-collapse">
 			<ul class="navbar-nav mr-auto">
-			
-				<li class="nav-item active">
-					<a class="nav-link" href="perfil_donador.php" >Perfil</a>
-				</li>
 				<li class="nav-item active">
 					<a class="nav-link" href="desconectar.php"  > Cerrar Cesión </a></li>
 				

@@ -108,7 +108,12 @@ a{
     text-align: center;
     margin-right: 10px;
    
-}
+}.imagen{
+    float left: inherit;
+     width: 150px;
+     height: 150px;
+     border-radius: 100%;
+ }
 
 
 

@@ -29,6 +29,7 @@ if (@!$_SESSION['user']) {
 				<br>
 				<p2>Direccion</p2>
 				<input type="text" name="direccion"  size="20" />
+<<<<<<< HEAD
 				<br>
 				<p2>Descripcion</p2>
 				<input type="text" name="descripcion"  />
@@ -38,6 +39,14 @@ if (@!$_SESSION['user']) {
 				<br>
 				<p2>Rol</p2>
 				<input name="rol" type="contrasena" id="contrasena" size="20" />
+=======
+				<br>
+				<p2>Descripcion</p2>
+				<input type="text" name="descripcion"  />
+				<br>
+				<p2>Contrase&ntilde;a</p2>
+				<input name="contrasena" type="contrasena" id="contrasena" size="20" />
+>>>>>>> 034fc1dc8edb40599dc186c77a738b46d6bb9704
 				<br>
 				<input type="submit" name="Enviar">
 			</form>

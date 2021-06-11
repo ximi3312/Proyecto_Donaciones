@@ -81,4 +81,8 @@
 
 <?php 
 include 'temp/pie.php';
+<<<<<<< HEAD
 ?>
+=======
+?>	
+>>>>>>> 034fc1dc8edb40599dc186c77a738b46d6bb9704

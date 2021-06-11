@@ -10,7 +10,7 @@
 
 	$username=$_POST['mail'];
 	//$pass=$_POST['pass'];
-	$passben=$_POST['passben'];
+	$passben=$_POST['pass'];
 
 
 	//la variable  $mysqli viene de connect_db que lo traigo con el require("connect_db.php");
@@ -30,7 +30,7 @@
 
 	$sql=mysqli_query($mysqli,"SELECT * FROM login WHERE email='$username'");
 	if($f=mysqli_fetch_assoc($sql)){
-		if($passben==$f['passben']){
+		if($passben==$f['pass']){
 			$_SESSION['id']=$f['id'];
 			$_SESSION['user']=$f['user'];
 			$_SESSION['rol']=$f['rol'];

@@ -2,36 +2,57 @@
 <html>
     <head>
         <title>Bienvenido a Tus donaciones </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,  initial-scale=1, shrink-to-fit=no">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
     </head>
 
-    <body> 
-        <h1>Quiénes somos </h1>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit molestie, gravida facilisis taciti fermentum 
-            posuere bibendum primis, faucibus vehicula aliquam condimentum cum vivamus inceptos. 
-            Purus volutpat himenaeos tempor ridiculus interdum commodo non orci aliquam habitant, 
-            
-            <p>tellus vel praesent a sociis hendrerit placerat nunc massa. Fames quis sociis cubilia taciti dis phasellus erat 
-                ante porta hendrerit imperdiet sagittis, pretium luctus ad suspendisse lacinia etiam aptent senectus 
-                habitant curae.
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Regresar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          </div>
+        </div>
+      </nav>
 
-            </p>
-
-            <div class="header" style="margin-left: 100px;">
-                <nav>
-                <ul style="margin-right: 120px ">
-              
-                <li><a href="index.php"> ingresar como Donador </a></li>
-                <li><a href="ingresabene.php"> ingresar como Beneficiario </a></li>
+      <body style="background-color: #f5f4f3;"> 
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" style="margin-top: 5%;">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/vision.jpg" class="d-block w-50" alt="..." style="margin-left: 400px; min-width: 250px">
                 
+                
+              </div>
+              
+              
+            </div>
+          </div>
+          <br>
+        <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Ingresa  como Donador</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="index.php" class="btn btn-primary">Login</a>
                 </div>
-                </ul>
-                </nav>
-               </div> 
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Ingresa como Beneficiario</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="ingresabene.php" class="btn btn-primary">Login</a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-
-        </p>
-
-         </body>
+    <body> 
 
 </html>

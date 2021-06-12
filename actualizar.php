@@ -36,34 +36,36 @@ if (@!$_SESSION['user']) {
 
 
 		?>
-<div class="log" style="height: 600px;">
-	<form action="ejecutaactualizar.php" method="post"; style="height: 700px"
-			>Id<br>
+<body background= "images/fondo.jpg" style="background-attachment:fixed;">
+<div style="text-align: center; background-color: #5dade2; margin-left: 30%; margin-right: 30%; border-radius: 15px; margin-top: 12%;">
+	<form action="ejecutaactualizar.php" method="post";>
+		<br>
+			<p2>ID</p2>
+<br>
             <input type="text" name="id" value= "<?php echo $id ?>" readonly="readonly">
 			<br>Usuario<br> 
+			<br>
 			<input type="text" name="user" value="<?php echo $user?>">
 			<br>Password usuario<br> 
+			<br>
 			<input type="text" name="pass" value="<?php echo $pass?>">
 			<br>Correo usuario<br> 
+			<br>
 			<input type="text" name="email" value="<?php echo $email?>">
 			<br>Pssword administrador<br> 
+			<br>
             <input type="text" name="pasadmin" value="<?php echo $pasadmin?>">
             <br>Rol<br>
+			<br>
             <input type="text" name="rol" value="<?php echo $rol?>">
             
 			
 				<br>
-				<input type="submit" value="Guardar" class="btn btn-success btn-primary">
+				<input  class="btn btn-primary" type="submit" value="Guardar" class="btn btn-success btn-primary">
 			</form>
 </div>
+</body>
+
 		
 
-		<div class="span8">
 		
-		</div>	
-		</div>	
-		<br/>
-	</div>
-
-  </body>
-</html>

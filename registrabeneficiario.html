@@ -5,36 +5,37 @@
 	<meta charset="utf-8">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.css">
-
-<h1>Registrar Beneficiario</h1>
 </head>
-<body >
-		<div class="log">
-<<<<<<< HEAD
+<body background= "images/fondo.jpg" style="background-attachment:fixed;" >
+		<div style="text-align: center; background-color:#f5c26f; margin-left: 30%; margin-right: 30%; border-radius: 15px; margin-top: 12%;">
 			<form action="registrarbeneficiario.php" method="POST">
-=======
-			<form action="registarbeneficiario.php" method="POST">
->>>>>>> 034fc1dc8edb40599dc186c77a738b46d6bb9704
-				<h5>Registrate Beneficiario</h5>
+				<br>
+				<h4 style="color: white;">Registrate Beneficiario</h4>
 				<p2>Nombre</p2>
+				<br>
 				<input type="text" name="nombre" placeholder="Nombre" required>
 				<br>
 				<p2>Correo</p2>
+				<br>
 				<input type="email" name="correo" placeholder="usuario@gmail.com" required>
 				<br>
 				<p2>Numero</p2>
-				<input type= "text" name="numero"   size="20" />
+				<br>
+				<input type= "text" name="numero" placeholder="Ejem. 33-00-00-00-00"  size="20" />
 				<br>
 				<p2>Direccion</p2>
-				<input type="text" name="direccion"  size="20" />
+				<br>
+				<input type="text" name="direccion" placeholder="Direccion" size="20" />
 				<br>
 				<p2>Descripcion</p2>
-				<input type="text" name="descripcion"  />
+				<br>
+				<input type="text" name="descripcion" placeholder="Caracteristicas de la Asociación" size="20" />
 				<br>
 				<p2>Contrase&ntilde;a</p2>
-				<input name="contrasena" type="contrasena" id="contrasena" size="20" />
 				<br>
-				<input type="submit" name="Enviar">
+				<input name="contrasena" type="password" id="contrasena" size="20" />
+				<br>
+				<input class="btn btn-warning" type="submit" name="Enviar">
 			</form>
 		</div>
 

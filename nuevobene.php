@@ -14,40 +14,41 @@ if (@!$_SESSION['user']) {
 <?php
 	include 'temp/cabeceraadmin.php';
 	?>
-
-		<div class="log" style="margin-left: 250px;">
+<body background= "images/fondo.jpg" style="background-attachment:fixed;">
+<div style="text-align: center; background-color:#f5c26f; margin-left: 30%; margin-right: 30%; border-radius: 15px; margin-top: 12%;" >
 		<form action="newregistro2.php" method="POST">
-				<h5>Registrate Beneficiario</h5>
+				<h5 style="color: white;">Registrate Beneficiario</h5>
+				<br>
 				<p2>Nombre</p2>
+				<br>
 				<input type="text" name="nombre" placeholder="Nombre" required>
 				<br>
 				<p2>Correo</p2>
+				<br>
 				<input type="email" name="correo" placeholder="usuario@gmail.com" required>
 				<br>
 				<p2>Numero</p2>
-				<input type= "text" name="numero"   size="20" />
+				<br>
+				<input type= "text" name="numero"  placeholder="Ejem. 33-00-00-00-00"  />
 				<br>
 				<p2>Direccion</p2>
-				<input type="text" name="direccion"  size="20" />
-<<<<<<< HEAD
+				<br>
+				<input type="text" name="direccion" placeholder="Direccion"   />
 				<br>
 				<p2>Descripcion</p2>
-				<input type="text" name="descripcion"  />
+				<br>
+				<input type="text" name="descripcion" placeholder="Caracteristicas de la Asociación"  />
 				<br>
 				<p2>Contrase&ntilde;a</p2>
-				<input name="contrasena" type="contrasena" id="contrasena" size="20" />
+				<br>
+				<input name="contrasena" type="password" id="contrasena" size="20" />
 				<br>
 				<p2>Rol</p2>
-				<input name="rol" type="contrasena" id="contrasena" size="20" />
-=======
 				<br>
-				<p2>Descripcion</p2>
-				<input type="text" name="descripcion"  />
-				<br>
-				<p2>Contrase&ntilde;a</p2>
-				<input name="contrasena" type="contrasena" id="contrasena" size="20" />
->>>>>>> 034fc1dc8edb40599dc186c77a738b46d6bb9704
+				<input name="rol"   size="20" />
 				<br>
 				<input type="submit" name="Enviar">
 			</form>
 		</div>
+</body>
+		

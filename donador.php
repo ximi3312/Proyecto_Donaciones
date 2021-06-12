@@ -22,14 +22,6 @@
     
     ?>
     <br>
-		<?php if($mensaje!="") {?>
-		<div class="alert alert-success">
-		<?php echo ($mensaje); ?>
-			
-			<a href="mostrarcarrito.php" class="badge badge-success">Ver Carrito</a>
-		</div>
-		
-		<?php }?>
 	
 		<div class="row">
 
@@ -72,17 +64,5 @@
 	<?php }
 	?>
 </div>
-<script>
-	$(function(){
-		$('[data-toggle="popover"]').popover()
-	}
-	);
-</script>
 
-<?php 
-include 'temp/pie.php';
-<<<<<<< HEAD
-?>
-=======
-?>	
->>>>>>> 034fc1dc8edb40599dc186c77a738b46d6bb9704
+

@@ -16,8 +16,8 @@ if (@!$_SESSION['user']) {
 	?>
 <body>
  
- <div class="table">
-     <table class="table table-success table-bordered">
+ <div  style="margin-top: 9%;">
+     <table class="table table-bordered">
          <thead>
              <tr>
                  <th colspan="8">Lista de Usuarios</th>
@@ -51,8 +51,8 @@ if (@!$_SESSION['user']) {
                      <td><?php echo $row['descripcion'];?></td>
                      <td><?php echo $row['contrasena'];?></td>
                      <td><?php echo $row['rol'];?></td>
-                     <td><a href="eliminar2.php?id=<?php echo $row['id']; ?>"><button type ='button' >Eliminar</button></a></td>;
-                     <td><a href="actualizar2.php?id=<?php echo $row['id']; ?>"><button type ='button' >Editar</button></a></td>;
+                     <td><a href="eliminar2.php?id=<?php echo $row['id']; ?>"><button class="btn btn-danger" type ='button' >Eliminar</button></a></td>;
+                     <td><a href="actualizar2.php?id=<?php echo $row['id']; ?>"><button class="btn btn-success"type ='button' >Editar</button></a></td>;
                  </tr>
  
              <?php 

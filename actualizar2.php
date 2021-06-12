@@ -35,42 +35,42 @@ if (@!$_SESSION['user']) {
                 $rol=$row[7];
                 
 		    }
-
-
-
 		?>
-<div class="log" style="height: 600px;">
-	<form action="ejecutaactualizar2.php" method="post"; style="height: 700px"
-			>Id<br>
+
+<body background= "images/fondo.jpg" style="background-attachment:fixed;">
+	<div style="text-align: center; background-color:#f5c26f; margin-left: 30%; margin-right: 30%; border-radius: 15px; margin-top: 9%; heigth: 10%">
+		<form action="ejecutaactualizar2.php" method="post";>
+			<br>
+			<p2>ID</p2>
+			<br>
             <input type="text" name="id" value= "<?php echo $id ?>" readonly="readonly">
 			<br>Usuario<br> 
+			<br>
 			<input type="text" name="user" value="<?php echo $user?>">
             <br>Correo usuario<br> 
+			<br>
 			<input type="text" name="email" value="<?php echo $email?>">
             <br>Dirección<br> 
+			<br>
 			<input type="text" name="direccion" value="<?php echo $direccion?>">
             <br>Número<br> 
+			<br>
 			<input type="text" name="numero" value="<?php echo $numero?>">
             <br>Descripcion<br> 
+			<br>
 			<input type="text" name="descripcion" value="<?php echo $descripcion ?>">
 			<br>Password usuario<br> 
-			<input type="text" name="pass" value="<?php echo $contrasena?>">
+			<br>
+			<input type="text" name="contrasena" value="<?php echo $contrasena?>">
             <br>Rol<br>
+			<br>
             <input type="text" name="rol" value="<?php echo $rol?>">
-            
-			
-				<br>
+			<br>
 				<input type="submit" value="Guardar" class="btn btn-success btn-primary">
 			</form>
-</div>
-		
-
-		<div class="span8">
-		
-		</div>	
-		</div>	
-		<br/>
 	</div>
+</body>
 
-  </body>
-</html>
+		
+
+		

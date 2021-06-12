@@ -16,16 +16,16 @@ if (@!$_SESSION['user']) {
 	?>
 <body>
  
- <div class="table">
-     <table class="table table-success table-bordered">
-         <thead>
+ <div style="margin-top: 9%;">
+     <table class="table table-bordered" >
+         <thead >
              <tr>
                  <th colspan="8">Lista de Usuarios</th>
              </tr>
          </thead>
-         <tbody>
+         <tbody >
              <tr>
-                 <td>ID</td>
+                 <td class="table-primary">ID</td>
                  <td>Nombres</td>
                  <td>Contraseña</td>
                  <td>Correo</td>
@@ -47,8 +47,8 @@ if (@!$_SESSION['user']) {
                      <td><?php echo $row['email'];?></td>
                      <td><?php echo $row['pasadmin'];?></td>
                      <td><?php echo $row['rol'];?></td>
-                     <td><a href="eliminar.php?id=<?php echo $row['id']; ?>"><button type ='button' >Eliminar</button></a></td>;
-                     <td><a href="actualizar.php?id=<?php echo $row['id']; ?>"><button type ='button' >Editar</button></a></td>;
+                     <td><a href="eliminar.php?id=<?php echo $row['id']; ?>"><button  class="btn btn-danger" type ='button' >Eliminar</button></a></td>;
+                     <td><a href="actualizar.php?id=<?php echo $row['id']; ?>"><button class="btn btn-success" type ='button' >Editar</button></a></td>;
                      
                  </tr>
  

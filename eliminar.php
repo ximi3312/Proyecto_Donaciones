@@ -13,5 +13,5 @@
  ?>
  <script type="text/javascript">
  	alert("Ha sido Eliminado el Usuario");
- 	window.location.href='admin.php';
+ 	window.location.href='tabladonadores.php';
  </script>

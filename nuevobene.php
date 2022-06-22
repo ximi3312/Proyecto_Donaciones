@@ -17,37 +17,36 @@ if (@!$_SESSION['user']) {
 <body background= "images/fondo.jpg" style="background-attachment:fixed;">
 <div style="text-align: center; background-color:#f5c26f; margin-left: 30%; margin-right: 30%; border-radius: 15px; margin-top: 12%;" >
 		<form action="newregistro2.php" method="POST">
-				<h5 style="color: white;">Registrate Beneficiario</h5>
+				<h5 style="color: white;">Registra Beneficiario</h5>
 				<br>
-				<p2>Nombre</p2>
+				<h6>Nombre</h6>
 				<br>
-				<input type="text" name="nombre" placeholder="Nombre" required>
+				<input type="text" name="user" placeholder="Nombre" required>
 				<br>
-				<p2>Correo</p2>
+				<h6>Correo</h6>
 				<br>
-				<input type="email" name="correo" placeholder="usuario@gmail.com" required>
+				<input type="email" name="email" placeholder="usuario@gmail.com" required>
 				<br>
-				<p2>Numero</p2>
-				<br>
-				<input type= "text" name="numero"  placeholder="Ejem. 33-00-00-00-00"  />
-				<br>
-				<p2>Direccion</p2>
+				<h6>Direccion</h6>
 				<br>
 				<input type="text" name="direccion" placeholder="Direccion"   />
 				<br>
-				<p2>Descripcion</p2>
+				<h6>Numero</h6>
+				<input type= "text" name="numero"  placeholder="Ejem. 33-00-00-00-00"  />
+				<br>
+				<h6>Descripcion</h6>
 				<br>
 				<input type="text" name="descripcion" placeholder="Caracteristicas de la Asociación"  />
 				<br>
-				<p2>Contrase&ntilde;a</p2>
+				<p>Contrase&ntilde;a</p>
 				<br>
-				<input name="contrasena" type="password" id="contrasena" size="20" />
+				<input type="password" name="contrasena" id="contrasena" size="20" />
 				<br>
-				<p2>Rol</p2>
+				<p>Rol</p>
 				<br>
-				<input name="rol"   size="20" />
+				<input type="text" name="rol" size="20" />
 				<br>
-				<input type="submit" name="Enviar">
+				<input class="btn btn-primary" type="submit" name="Enviar" />
 			</form>
 		</div>
 </body>

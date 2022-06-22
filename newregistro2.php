@@ -1,8 +1,8 @@
 <?php 
 
 $conectar = new PDO('mysql:host=localhost;dbname=academ', 'root', '');
-$nombre = $_POST['nombre'];
-$correo = $_POST['correo'];
+$nombre = $_POST['user'];
+$correo = $_POST['email'];
 $contrasena = $_POST['contrasena'];
 $numero = $_POST['numero'];
 $descripcion = $_POST['descripcion'];
@@ -18,12 +18,14 @@ $rol = $_POST['rol'];
 	if ($resultado) {
 		header("Location: admin.php");
 		echo '<script>
-				alert("Registro Exitoso");
+				alert("Registro Exitoso")
 				</script>';
 	}else{
-
-		echo "Error al Registrar";
+        header("Location: nuevobene.php");
+		echo '<script>
+		alert("Registro Fallido")
+		</script>';
 	}
-	require 'admin.php';
+
 
 ?>
